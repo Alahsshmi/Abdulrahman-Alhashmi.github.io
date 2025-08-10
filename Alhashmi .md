@@ -7,79 +7,72 @@
 <meta name="description" content="E-portfolio of Abdul Rahman Husain Alhashmi — HV Control Engineer and MSc AI student.">
 <style>
 :root{
-  --bg:#f8fafc;         /* page background */
-  --panel:#ffffff;      /* panels/cards */
-  --card:#ffffff;
-  --text:#0f172a;       /* main text */
-  --muted:#475569;      /* secondary text */
-  --border:#e2e8f0;     /* borders */
-  --accent:#2563eb;     /* primary (blue) */
-  --accent2:#16a34a;    /* secondary (green) */
-  --link:#1d4ed8;
-  --shadow:0 6px 18px rgba(15,23,42,.08);
+  --bg:#0f172a; --panel:#0b1224; --card:#111827; --text:#e5e7eb; --muted:#94a3b8;
+  --accent:#38bdf8; --accent2:#22c55e; --border:#1f2937; --link:#93c5fd;
 }
 *{box-sizing:border-box}
 html,body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial}
 img{max-width:100%;height:auto}
 a{color:var(--link);text-decoration:none}
-a:hover{text-decoration:underline}
-a:focus,button:focus,input:focus,textarea:focus{outline:2px solid var(--accent);outline-offset:3px}
+a:hover{opacity:.9}
+a:focus,button:focus,input:focus,textarea:focus{outline:2px dashed var(--accent);outline-offset:3px}
 .container{max-width:1100px;margin:0 auto;padding:1rem}
-header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--border);z-index:10}
+header{position:sticky;top:0;background:rgba(15,23,42,.9);backdrop-filter:saturate(180%) blur(6px);z-index:10;border-bottom:1px solid var(--border)}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:.8rem 1rem}
-.brand a{color:#0b1224;font-weight:700}
+.brand{font-weight:700}
+.brand a{color:#fff}
 .menu{display:flex;gap:1rem;list-style:none;margin:0;padding:0}
-.menu a{padding:.35rem .55rem;border-radius:.4rem;display:block;color:#0b1224}
-.menu a:hover{background:#eef2ff;text-decoration:none}
+.menu a{padding:.35rem .55rem;border-radius:.4rem;display:block}
+.menu a:hover{background:rgba(255,255,255,.08)}
 #m{display:none}
 .menu-btn{display:none;cursor:pointer}
-.menu-btn span,.menu-btn span:before,.menu-btn span:after{display:block;background:#0b1224;height:2px;width:24px;border-radius:10px;content:"";transition:.2s}
+.menu-btn span,.menu-btn span:before,.menu-btn span:after{display:block;background:#fff;height:2px;width:24px;border-radius:10px;content:"";transition:.2s}
 .menu-btn span:before{transform:translateY(-6px)}
 .menu-btn span:after{transform:translateY(4px)}
 @media (max-width:820px){
   .menu-btn{display:block}
-  .menu{position:absolute;right:10px;top:60px;flex-direction:column;background:#fff;border:1px solid var(--border);border-radius:.6rem;padding:.6rem;display:none;box-shadow:var(--shadow)}
+  .menu{position:absolute;right:10px;top:60px;flex-direction:column;background:#0b1224;border:1px solid var(--border);border-radius:.6rem;padding:.6rem;display:none}
   #m:checked + label + ul{display:flex}
 }
-.hero{padding:3.4rem 1rem;background:linear-gradient(135deg,#eef2ff 0%, #f8fafc 70%)}
+.hero{padding:3.6rem 1rem;background:linear-gradient(135deg,#0b1224 0%, #111827 60%, #102a43 100%)}
 .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center}
 @media (max-width:820px){.hero .wrap{grid-template-columns:1fr}}
 .kicker{letter-spacing:.08em;color:var(--accent2);font-weight:700;text-transform:uppercase;font-size:.8rem}
 h1{margin:.3rem 0 1rem}
 p{line-height:1.7}
 .muted{color:var(--muted)}
-.btn{display:inline-block;background:var(--accent);color:#fff;padding:.7rem 1rem;border-radius:.5rem;font-weight:600;border:1px solid transparent}
-.btn:hover{text-decoration:none;filter:brightness(1.05)}
-.btn.secondary{background:#fff;color:#0b1224;border:1px solid var(--border)}
+.btn{display:inline-block;background:var(--accent);color:#001119;padding:.7rem 1rem;border-radius:.5rem;font-weight:600}
+.btn.secondary{background:#1f2937;color:#e5e7eb;border:1px solid var(--border)}
 .sections{display:grid;gap:1rem}
 .grid-3{grid-template-columns:repeat(3,1fr)}
 @media (max-width:900px){.grid-3{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:600px){.grid-3{grid-template-columns:1fr}}
-.card{background:var(--card);border:1px solid var(--border);border-radius:.8rem;padding:1rem;box-shadow:var(--shadow)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:.8rem;padding:1rem;box-shadow:0 10px 20px rgba(0,0,0,.35)}
 .card h3{margin-top:.2rem}
 .badges{display:flex;gap:.4rem;flex-wrap:wrap;margin:.6rem 0}
-.badge{background:#f1f5f9;border:1px solid var(--border);color:#0f172a;padding:.2rem .5rem;border-radius:.5rem;font-size:.8rem}
+.badge{background:var(--panel);border:1px solid var(--border);color:var(--muted);padding:.2rem .5rem;border-radius:.5rem;font-size:.8rem}
 hr{border:0;border-top:1px solid var(--border);margin:1.4rem 0}
 section{scroll-margin-top:80px}
 .table{width:100%;border-collapse:collapse;margin:1rem 0}
-.table th,.table td{border:1px solid var(--border);padding:.6rem;text-align:left}
-.table th{background:#f1f5f9}
+.table th,.table td{border:1px solid #303a4d;padding:.6rem;text-align:left}
+.table th{background:var(--panel)}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 @media (max-width:720px){.form-row{grid-template-columns:1fr}}
-input,textarea{width:100%;padding:.6rem;border-radius:.4rem;border:1px solid var(--border);background:#fff;color:#0f172a}
-footer{border-top:1px solid var(--border);margin-top:2rem;background:#fff}
+input,textarea{width:100%;padding:.6rem;border-radius:.4rem;border:1px solid #334155;background:var(--panel);color:var(--text)}
+footer{border-top:1px solid var(--border);margin-top:2rem}
 .small{font-size:.9rem}
-.figure{background:#ffffff;border:1px dashed var(--border);border-radius:.6rem;padding:.6rem;display:flex;align-items:center;justify-content:center;min-height:140px}
+.credit{font-weight:700;color:#cbd5e1}
+.figure{background:var(--panel);border:1px solid var(--border);border-radius:.6rem;padding:.6rem;display:flex;align-items:center;justify-content:center;min-height:140px}
 .icon{display:inline-block;width:20px;height:20px;vertical-align:-3px;margin-right:.4rem}
 .icon svg{width:20px;height:20px;fill:currentColor}
 </style>
 </head>
 <body>
-<header aria-label="Primary">
+<header>
   <nav class="nav">
     <div class="brand"><a href="#home">Abdul Rahman Husain Alhashmi</a></div>
-    <input id="m" type="checkbox" aria-label="Toggle navigation">
-    <label for="m" class="menu-btn" aria-hidden="true"><span></span></label>
+    <input id="m" type="checkbox">
+    <label for="m" class="menu-btn"><span></span></label>
     <ul class="menu">
       <li><a href="#home">Home</a></li>
       <li><a href="#ml">Machine Learning</a></li>
@@ -104,12 +97,12 @@ footer{border-top:1px solid var(--border);margin-top:2rem;background:#fff}
       </p>
     </div>
     <div class="figure" aria-hidden="true">
-      <!-- Profile graphic (light theme) -->
+      <!-- Profile graphic -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160" role="img" aria-label="Profile graphic">
-        <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#2563eb"/><stop offset="100%" stop-color="#16a34a"/></linearGradient></defs>
-        <rect width="240" height="160" rx="10" fill="#ffffff"/>
+        <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#38bdf8"/><stop offset="100%" stop-color="#22c55e"/></linearGradient></defs>
+        <rect width="240" height="160" rx="10" fill="#0b1224"/>
         <circle cx="120" cy="60" r="34" fill="url(#g)"/>
-        <rect x="55" y="100" width="130" height="38" rx="16" fill="#e2e8f0"/>
+        <rect x="55" y="100" width="130" height="38" rx="16" fill="#102a43"/>
       </svg>
     </div>
   </div>
@@ -125,19 +118,19 @@ footer{border-top:1px solid var(--border);margin-top:2rem;background:#fff}
   <div class="sections grid-3">
     <article class="card">
       <h3><a href="#ml">Machine Learning</a></h3>
-      <p class="small muted"><strong>20 CREDITS</strong></p>
+      <p class="credit">20 CREDITS</p>
       <p>Supervised and unsupervised learning on tabular data; model evaluation and limits.</p>
       <div class="badges"><span class="badge">Python</span><span class="badge">scikit-learn</span><span class="badge">Pandas</span></div>
     </article>
     <article class="card">
       <h3><a href="#rmpp">Research Methods & Professional Practice</a></h3>
-      <p class="small muted"><strong>20 CREDITS</strong></p>
+      <p class="credit">20 CREDITS</p>
       <p>Evidence-based writing, ethics, references, and reflective practice for engineering contexts.</p>
       <div class="badges"><span class="badge">Ethics</span><span class="badge">Harvard refs</span><span class="badge">Reporting</span></div>
     </article>
     <article class="card">
       <h3><a href="#agents">Intelligent Agents</a></h3>
-      <p class="small muted"><strong>20 CREDITS</strong></p>
+      <p class="credit">20 CREDITS</p>
       <p>Agent architectures and safeguards; human-in-the-loop and deployment patterns.</p>
       <div class="badges"><span class="badge">Multi-agent</span><span class="badge">Design</span><span class="badge">Governance</span></div>
     </article>
