@@ -104,12 +104,14 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
   <div class="container nav" role="navigation" aria-label="Primary">
     <div class="brand">Abdul Rahman Husain Alhashmi</div>
     <div style="display:flex;align-items:center;gap:.6rem">
-      <button id="themeBtn" class="theme" type="button" aria-pressed="false" aria-label="Toggle theme">🌗 Theme</button>
+      <button id="themeBtn" class="theme" type="button" aria-pressed="false" aria-label="Toggle theme">Theme</button>
       <input id="nav-toggle" type="checkbox" aria-label="Toggle menu">
       <label for="nav-toggle" class="menu-btn" aria-hidden="true"><span></span></label>
       <ul class="menu">
         <li><a href="#home" class="is-active">Home</a></li>
         <li><a href="#modules">Modules</a></li>
+        <li><a href="#ml">Machine Learning</a></li>
+        <li><a href="#agents">Intelligent Agents</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -124,10 +126,11 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
       <div class="kicker">MSc Artificial Intelligence E-Portfolio</div>
       <h1>HV Control Engineer & MSc AI student</h1>
       <p>I work on high-voltage network control and practical, data-driven solutions. This portfolio presents selected work with aims, methods, and outcomes.</p>
-      <p class="small">Last updated: 11 August 2025</p>
+      <p class="small">Last updated: 12 August 2025</p>
       <p>
         <a class="btn" href="#projects">View projects</a>
         <a class="btn ghost" href="#modules">Module sections</a>
+        <a class="btn" href="cv/Abdulrahman-CV.pdf">Download CV</a>
       </p>
       <p class="small">Links:
         <a href="https://github.com/Alahsshmi" rel="noopener">GitHub</a> ·
@@ -137,7 +140,7 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
     <div class="figure" aria-hidden="true">
       <!-- Profile graphic -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160" role="img" aria-label="Profile graphic">
-        <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#2563eb"/><stop offset="100%" stop-color="#16a34a"/></linearGradient></defs>
+        <defs><linearGradient id="g" x1="0" y="0" x2="1" y2="1"><stop offset="0%" stop-color="#2563eb"/><stop offset="100%" stop-color="#16a34a"/></linearGradient></defs>
         <rect width="240" height="160" rx="10" fill="var(--card)"/>
         <circle cx="120" cy="60" r="34" fill="url(#g)"/>
         <rect x="55" y="100" width="130" height="38" rx="16" fill="var(--surface)"/>
@@ -170,6 +173,224 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
   </div>
 </section>
 
+<!-- Machine Learning Units 1–12 -->
+<section id="ml" class="section">
+  <div class="container">
+    <h2>Machine Learning</h2>
+    <p class="small">Applied modelling on tabular data with clear splits, honest metrics, and reproducible workflows.</p>
+
+    <div class="small" style="display:flex;gap:.5rem;flex-wrap:wrap;margin:.5rem 0 1rem">
+      <button class="theme" type="button" data-scope="#ml" data-expand>Expand all</button>
+      <button class="theme" type="button" data-scope="#ml" data-collapse>Collapse all</button>
+    </div>
+
+    <details class="card"><summary><strong>Unit 1:</strong> Induction & tools</summary>
+      <ul>
+        <li>Outcomes: Python setup, repo, environment, style guide.</li>
+        <li>Work: “hello dataset” notebook, smoke tests, Git commits.</li>
+        <li>Evidence: <a href="#" title="Add link">Repo</a> · <a href="#" title="Add link">Notebook</a></li>
+      </ul>
+    </details>
+
+    <details class="card"><summary><strong>Unit 2:</strong> EDA & data quality</summary>
+      <ul>
+        <li>Outcomes: profiling, missingness, target distribution, leakage checks.</li>
+        <li>Work: EDA plots, data dictionary, data quality log.</li>
+        <li>Evidence: <a href="#" title="Add link">EDA notebook</a> · <a href="#" title="Add link">Report</a></li>
+      </ul>
+    </details>
+
+    <details class="card"><summary><strong>Unit 3:</strong> Cleaning & feature engineering</summary>
+      <ul>
+        <li>Outcomes: encodings, scaling, winsorising, date/geo features.</li>
+        <li>Work: pipeline fragments; train/test split policy.</li>
+        <li>Evidence: <a href="#" title="Add link">Features notebook</a> · <a href="#" title="Add link">Pipeline code</a></li>
+      </ul>
+    </details>
+
+    <details class="card"><summary><strong>Unit 4:</strong> Baselines & split strategy</summary>
+      <ul>
+        <li>Outcomes: baseline MAE/RMSE, CV choice (KFold/Stratified/Group).</li>
+        <li>Work: constant/median baseline; proper CV.</li>
+        <li>Evidence: <a href="#" title="Add link">Results table</a> · <a href="#" title="Add link">CV policy</a></li>
+      </ul>
+    </details>
+
+    <details class="card"><summary><strong>Unit 5:</strong> Linear models</summary>
+      <ul>
+        <li>Outcomes: OLS/Ridge/Lasso; interpret coefficients.</li>
+        <li>Work: log(price) target; regularisation path.</li>
+        <li>Evidence: <a href="#" title="Add link">Metrics</a> · <a href="#" title="Add link">Coefficients</a></li>
+      </ul>
+    </details>
+
+    <details class="card"><summary><strong>Unit 6:</strong> Trees & ensembles</summary>
+      <ul>
+        <li>Outcomes: RF/GB basics; variance control.</li>
+        <li>Work: RF with light tuning; feature importance caveats.</li>
+        <li>Evidence: <a href="#" title="Add link">MAE/RMSE</a> · <a href="#" title="Add link">Top signals</a></li>
+      </ul>
+    </details>
+
+    <details class="card"><summary><strong>Unit 7:</strong> Model evaluation</summary>
+      <ul>
+        <li>Outcomes: CV diagnostics, error analysis, residuals.</li>
+        <li>Work: learning curves; error by segment (room type, borough).</li>
+        <li>Evidence: <a href="#" title="Add link">Plots</a> · <a href="#" title="Add link">Segment errors</a></li>
+      </ul>
+    </details>
+
+    <details class="card"><summary><strong>Unit 8:</strong> Regularisation & robustness</summary>
+      <ul>
+        <li>Outcomes: bias–variance, overfitting handling.</li>
+        <li>Work: dropout rows, noise tests, outlier sensitivity checks.</li>
+        <li>Evidence: <a href="#" title="Add link">Stress tests</a> · <a href="#" title="Add link">Delta metrics</a></li>
+      </ul>
+    </details>
+
+    <details class="card"><summary><strong>Unit 9:</strong> Unsupervised learning</summary>
+      <ul>
+        <li>Outcomes: clustering for segments; K-means vs DBSCAN notes.</li>
+        <li>Work: simple customer segments; silhouette check.</li>
+        <li>Evidence: <a href="#" title="Add link">Clusters summary</a> · <a href="#" title="Add link">Notebook</a></li>
+      </ul>
+    </details>
+
+    <details class="card"><summary><strong>Unit 10:</strong> Interpretability</summary>
+      <ul>
+        <li>Outcomes: permutation importance; PDP/ICE basics.</li>
+        <li>Work: explain key features (room type, neighbourhood).</li>
+        <li>Evidence: <a href="#" title="Add link">PDP/ICE</a> · <a href="#" title="Add link">Narrative</a></li>
+      </ul>
+    </details>
+
+    <details class="card"><summary><strong>Unit 11:</strong> Pipelines & reproducibility</summary>
+      <ul>
+        <li>Outcomes: sklearn Pipeline; random seeds; run logs.</li>
+        <li>Work: single script/notebook end-to-end.</li>
+        <li>Evidence: <a href="#" title="Add link">Repo link</a> · <a href="#" title="Add link">versions.txt</a></li>
+      </ul>
+    </details>
+
+    <details class="card"><summary><strong>Unit 12:</strong> Final synthesis & reflection</summary>
+      <ul>
+        <li>Outcomes: concise case study using STAR.</li>
+        <li>Work: results table; limits; next steps.</li>
+        <li>Evidence: <a href="#" title="Add link">Final notebook</a> · <a href="#" title="Add link">Report PDF</a></li>
+      </ul>
+    </details>
+  </div>
+</section>
+
+<!-- Intelligent Agents Units 1–12 -->
+<section id="agents" class="section">
+  <div class="container">
+    <h2>Intelligent Agents</h2>
+    <p class="small">Agent architectures, multi-agent coordination, safeguards, and deployment in real systems.</p>
+
+    <div class="small" style="display:flex;gap:.5rem;flex-wrap:wrap;margin:.5rem 0 1rem">
+      <button class="theme" type="button" data-scope="#agents" data-expand>Expand all</button>
+      <button class="theme" type="button" data-scope="#agents" data-collapse>Collapse all</button>
+    </div>
+
+    <details class="card"><summary><strong>Unit 1:</strong> Agents & environments</summary>
+      <ul>
+        <li>Outcomes: perceive–act loop; performance measures; environment types.</li>
+        <li>Work: simple reflex agent demo; task specs.</li>
+        <li>Evidence: <a href="#" title="Add link">Notebook</a> · <a href="#" title="Add link">Diagram</a></li>
+      </ul>
+    </details>
+
+    <details class="card"><summary><strong>Unit 2:</strong> Reactive vs deliberative</summary>
+      <ul>
+        <li>Outcomes: pros/cons; hybrid architectures.</li>
+        <li>Work: reactive rule set vs planning-based sketch.</li>
+        <li>Evidence: <a href="#" title="Add link">Latency chart</a></li>
+      </ul>
+    </details>
+
+    <details class="card"><summary><strong>Unit 3:</strong> Goal/utility-based agents</summary>
+      <ul>
+        <li>Outcomes: state, goals, utilities, rational choice.</li>
+        <li>Work: utility function design for a simple domain.</li>
+        <li>Evidence: <a href="#" title="Add link">Scenario table</a></li>
+      </ul>
+    </details>
+
+    <details class="card"><summary><strong>Unit 4:</strong> Multi-agent systems (MAS)</summary>
+      <ul>
+        <li>Outcomes: coordination/competition; organisation patterns.</li>
+        <li>Work: small MAS scenario and roles.</li>
+        <li>Evidence: <a href="#" title="Add link">Sequence diagram</a></li>
+      </ul>
+    </details>
+
+    <details class="card"><summary><strong>Unit 5:</strong> Communication & coordination</summary>
+      <ul>
+        <li>Outcomes: messaging, protocols, blackboard models.</li>
+        <li>Work: failure modes; retries; heartbeats.</li>
+        <li>Evidence: <a href="#" title="Add link">Protocol table</a> · <a href="#" title="Add link">Logs</a></li>
+      </ul>
+    </details>
+
+    <details class="card"><summary><strong>Unit 6:</strong> Search & planning</summary>
+      <ul>
+        <li>Outcomes: BFS/DFS/A*; plan execution & replanning.</li>
+        <li>Work: compare heuristics quality vs cost.</li>
+        <li>Evidence: <a href="#" title="Add link">Path costs</a> · <a href="#" title="Add link">Expansions</a></li>
+      </ul>
+    </details>
+
+    <details class="card"><summary><strong>Unit 7:</strong> Learning in agents</summary>
+      <ul>
+        <li>Outcomes: model-free vs model-based; simple RL ideas.</li>
+        <li>Work: policy tweaks under reward shaping.</li>
+        <li>Evidence: <a href="#" title="Add link">Reward curves</a></li>
+      </ul>
+    </details>
+
+    <details class="card"><summary><strong>Unit 8:</strong> Games, incentives, norms</summary>
+      <ul>
+        <li>Outcomes: payoffs, equilibria, mechanism hints.</li>
+        <li>Work: cooperation vs defection stress test.</li>
+        <li>Evidence: <a href="#" title="Add link">Payoff matrices</a></li>
+      </ul>
+    </details>
+
+    <details class="card"><summary><strong>Unit 9:</strong> Safety, ethics, governance</summary>
+      <ul>
+        <li>Outcomes: human-in-the-loop, approvals, audit trails.</li>
+        <li>Work: risk table; escalation thresholds.</li>
+        <li>Evidence: <a href="#" title="Add link">RACI</a> · <a href="#" title="Add link">Change log</a></li>
+      </ul>
+    </details>
+
+    <details class="card"><summary><strong>Unit 10:</strong> Simulation & testing</summary>
+      <ul>
+        <li>Outcomes: scenario libraries; fault injection.</li>
+        <li>Work: sandbox runs; KPIs; regression tests.</li>
+        <li>Evidence: <a href="#" title="Add link">Test report</a> · <a href="#" title="Add link">Coverage</a></li>
+      </ul>
+    </details>
+
+    <details class="card"><summary><strong>Unit 11:</strong> Deployment & monitoring</summary>
+      <ul>
+        <li>Outcomes: rollout stages; observability; SLOs.</li>
+        <li>Work: alerts, dashboards, rollback plan.</li>
+        <li>Evidence: <a href="#" title="Add link">Runbook</a> · <a href="#" title="Add link">Alert screenshot</a></li>
+      </ul>
+    </details>
+
+    <details class="card"><summary><strong>Unit 12:</strong> Capstone & reflection</summary>
+      <ul>
+        <li>Outcomes: case write-up with results and limits.</li>
+        <li>Work: STAR summary; future improvements.</li>
+        <li>Evidence: <a href="#" title="Add link">Report</a> · <a href="#" title="Add link">Slides</a></li>
+      </ul>
+    </details>
+  </div>
+</section>
+
 <section id="projects" class="section">
   <div class="container">
     <h2>Projects</h2>
@@ -197,7 +418,7 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
         </ul>
       </article>
 
-      <article class="card" id="agents">
+      <article class="card" id="agents-quick">
         <h3>Agent-based systems — safeguards and use</h3>
         <p><strong>Focus:</strong> where agents add value and how to keep decisions safe.</p>
         <ul>
@@ -256,6 +477,7 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
         <p>Email: <a href="mailto:Alhashmi-ad@outlook.com">Alhashmi-ad@outlook.com</a></p>
         <p>GitHub: <a href="https://github.com/Alahsshmi" rel="noopener">github.com/Alahsshmi</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/abdul-rahman-alhashmi-b659541b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" rel="noopener">Profile</a></p>
+        <p><a class="btn ghost" href="cv/Abdulrahman-CV.pdf">Download CV</a></p>
         <p class="small">Location: United Arab Emirates</p>
       </div>
     </div>
@@ -302,11 +524,22 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
       }
     });
   }, opts);
-  ['home','modules','projects','skills','contact']
+  ['home','modules','ml','agents','projects','skills','contact']
     .forEach(id=>{const el=document.getElementById(id); if(el) obs.observe(el);});
 })();
 
-/* Reduce motion respect */
+/* Expand/Collapse all for sections */
+document.querySelectorAll('button[data-expand],button[data-collapse]').forEach(btn=>{
+  const scopeSel = btn.getAttribute('data-scope');
+  const scope = scopeSel ? document.querySelector(scopeSel) : null;
+  if(!scope) return;
+  const open = btn.hasAttribute('data-expand');
+  btn.addEventListener('click', () => {
+    scope.querySelectorAll('details.card').forEach(d => d.open = open);
+  });
+});
+
+/* Respect reduced motion */
 if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   document.documentElement.style.scrollBehavior = 'auto';
 }
