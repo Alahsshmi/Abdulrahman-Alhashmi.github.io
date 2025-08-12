@@ -282,115 +282,130 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
   </div>
 </section>
 
-<!-- Intelligent Agents Units 1–12 -->
+<!-- Intelligent Agents Units 1–12 (from your module document) -->
 <section id="agents" class="section">
   <div class="container">
     <h2>Intelligent Agents</h2>
-    <p class="small">Agent architectures, multi-agent coordination, safeguards, and deployment in real systems.</p>
+    <p class="small">Module content summarised from your course guide: topics, outcomes, and key activities per unit.</p>
 
     <div class="small" style="display:flex;gap:.5rem;flex-wrap:wrap;margin:.5rem 0 1rem">
       <button class="theme" type="button" data-scope="#agents" data-expand>Expand all</button>
       <button class="theme" type="button" data-scope="#agents" data-collapse>Collapse all</button>
     </div>
 
-    <details class="card"><summary><strong>Unit 1:</strong> Agents & environments</summary>
+    <!-- Unit 1 -->
+    <details class="card"><summary><strong>Unit 1:</strong> Introduction to Agent-Based Computing</summary>
       <ul>
-        <li>Outcomes: perceive–act loop; performance measures; environment types.</li>
-        <li>Work: simple reflex agent demo; task specs.</li>
-        <li>Evidence: <a href="#" title="Add link">Notebook</a> · <a href="#" title="Add link">Diagram</a></li>
+        <li><strong>Topics:</strong> trends driving agent-based computing; autonomy; agent–environment interaction; real-world examples.</li>
+        <li><strong>Learning outcomes:</strong> explain core concepts; recognise enabling trends; compare types of agent-based systems.</li>
+        <li><strong>Activities:</strong> lecturecast (1 h); set up e-portfolio section; Module Wiki entry; first discussion post; seminar prep.</li>
       </ul>
     </details>
 
-    <details class="card"><summary><strong>Unit 2:</strong> Reactive vs deliberative</summary>
+    <!-- Unit 2 -->
+    <details class="card"><summary><strong>Unit 2:</strong> Introducing First-Order Logic</summary>
       <ul>
-        <li>Outcomes: pros/cons; hybrid architectures.</li>
-        <li>Work: reactive rule set vs planning-based sketch.</li>
-        <li>Evidence: <a href="#" title="Add link">Latency chart</a></li>
+        <li><strong>Topics:</strong> symbols and syntax; mapping between natural language and logic; quantifiers.</li>
+        <li><strong>Learning outcomes:</strong> understand FOL elements; begin creating and reasoning over statements.</li>
+        <li><strong>Activities:</strong> reading (4 h); follow-up discussion replies; e-portfolio updates; seminar on FOL.</li>
       </ul>
     </details>
 
-    <details class="card"><summary><strong>Unit 3:</strong> Goal/utility-based agents</summary>
+    <!-- Unit 3 -->
+    <details class="card"><summary><strong>Unit 3:</strong> Agent Architectures</summary>
       <ul>
-        <li>Outcomes: state, goals, utilities, rational choice.</li>
-        <li>Work: utility function design for a simple domain.</li>
-        <li>Evidence: <a href="#" title="Add link">Scenario table</a></li>
+        <li><strong>Topics:</strong> history and development; symbolic reasoning agents; agents with state; reactive approaches.</li>
+        <li><strong>Learning outcomes:</strong> evaluate architectures; select appropriate designs; distinguish intentions vs desires.</li>
+        <li><strong>Activities:</strong> lecturecast (1 h); reading (4 h); summary discussion post; e-portfolio notes; seminar prep.</li>
       </ul>
     </details>
 
-    <details class="card"><summary><strong>Unit 4:</strong> Multi-agent systems (MAS)</summary>
+    <!-- Unit 4 -->
+    <details class="card"><summary><strong>Unit 4:</strong> Hybrid Agent Architectures</summary>
       <ul>
-        <li>Outcomes: coordination/competition; organisation patterns.</li>
-        <li>Work: small MAS scenario and roles.</li>
-        <li>Evidence: <a href="#" title="Add link">Sequence diagram</a></li>
+        <li><strong>Topics:</strong> combining reactive and deliberative behaviours; case study of a deployed hybrid system.</li>
+        <li><strong>Learning outcomes:</strong> critically assess architectures; justify selections for a given problem.</li>
+        <li><strong>Activities:</strong> reading (4 h); Module Wiki post; e-portfolio updates; seminar on hybrid designs.</li>
       </ul>
     </details>
 
-    <details class="card"><summary><strong>Unit 5:</strong> Communication & coordination</summary>
+    <!-- Unit 5 -->
+    <details class="card"><summary><strong>Unit 5:</strong> Agent Communication</summary>
       <ul>
-        <li>Outcomes: messaging, protocols, blackboard models.</li>
-        <li>Work: failure modes; retries; heartbeats.</li>
-        <li>Evidence: <a href="#" title="Add link">Protocol table</a> · <a href="#" title="Add link">Logs</a></li>
+        <li><strong>Topics:</strong> speech acts; KQML; role of ontologies in communication.</li>
+        <li><strong>Learning outcomes:</strong> build ontologies; create inter-agent messages with suitable languages.</li>
+        <li><strong>Activities:</strong> lecturecast (1 h); reading (4 h); start Discussion 2; e-portfolio updates.</li>
       </ul>
     </details>
 
-    <details class="card"><summary><strong>Unit 6:</strong> Search & planning</summary>
+    <!-- Unit 6 -->
+    <details class="card"><summary><strong>Unit 6:</strong> Working Together</summary>
       <ul>
-        <li>Outcomes: BFS/DFS/A*; plan execution & replanning.</li>
-        <li>Work: compare heuristics quality vs cost.</li>
-        <li>Evidence: <a href="#" title="Add link">Path costs</a> · <a href="#" title="Add link">Expansions</a></li>
+        <li><strong>Topics:</strong> designing dialogues with KQML/KIF; strengths and limits of agent communication.</li>
+        <li><strong>Learning outcomes:</strong> author dialogues; use ontologies for knowledge sharing.</li>
+        <li><strong>Activities:</strong> “Creating Agent Dialogues” e-portfolio task; seminar on real KQML dialogues.</li>
+        <li><strong>Assessment:</strong> Team Project report, 1,000 words, 20% (with peer review).</li>
       </ul>
     </details>
 
-    <details class="card"><summary><strong>Unit 7:</strong> Learning in agents</summary>
+    <!-- Unit 7 -->
+    <details class="card"><summary><strong>Unit 7:</strong> Natural Language Processing (NLP)</summary>
       <ul>
-        <li>Outcomes: model-free vs model-based; simple RL ideas.</li>
-        <li>Work: policy tweaks under reward shaping.</li>
-        <li>Evidence: <a href="#" title="Add link">Reward curves</a></li>
+        <li><strong>Topics:</strong> why NLP is challenging; common techniques; Word2Vec focus.</li>
+        <li><strong>Learning outcomes:</strong> evaluate NLP difficulties; understand core principles and techniques.</li>
+        <li><strong>Activities:</strong> lecturecast (1 h); reading (4 h); summary post; e-portfolio updates.</li>
       </ul>
     </details>
 
-    <details class="card"><summary><strong>Unit 8:</strong> Games, incentives, norms</summary>
+    <!-- Unit 8 -->
+    <details class="card"><summary><strong>Unit 8:</strong> Understanding NLP</summary>
       <ul>
-        <li>Outcomes: payoffs, equilibria, mechanism hints.</li>
-        <li>Work: cooperation vs defection stress test.</li>
-        <li>Evidence: <a href="#" title="Add link">Payoff matrices</a></li>
+        <li><strong>Topics:</strong> Word2Vec hands-on demo; constituency parse trees.</li>
+        <li><strong>Learning outcomes:</strong> explain NLP model elements; build parse trees from examples.</li>
+        <li><strong>Activities:</strong> “Creating Parse Trees” e-portfolio task; seminar with demo; reading (4 h).</li>
       </ul>
     </details>
 
-    <details class="card"><summary><strong>Unit 9:</strong> Safety, ethics, governance</summary>
+    <!-- Unit 9 -->
+    <details class="card"><summary><strong>Unit 9:</strong> Introduction to Adaptive Algorithms</summary>
       <ul>
-        <li>Outcomes: human-in-the-loop, approvals, audit trails.</li>
-        <li>Work: risk table; escalation thresholds.</li>
-        <li>Evidence: <a href="#" title="Add link">RACI</a> · <a href="#" title="Add link">Change log</a></li>
+        <li><strong>Topics:</strong> artificial neural networks; deep learning; opportunities and limitations.</li>
+        <li><strong>Learning outcomes:</strong> understand ANN concepts; appraise strengths of adaptive techniques.</li>
+        <li><strong>Activities:</strong> lecturecast (1 h); reading (4 h); start Discussion 3; e-portfolio updates.</li>
       </ul>
     </details>
 
-    <details class="card"><summary><strong>Unit 10:</strong> Simulation & testing</summary>
+    <!-- Unit 10 -->
+    <details class="card"><summary><strong>Unit 10:</strong> Deep Learning in Action</summary>
       <ul>
-        <li>Outcomes: scenario libraries; fault injection.</li>
-        <li>Work: sandbox runs; KPIs; regression tests.</li>
-        <li>Evidence: <a href="#" title="Add link">Test report</a> · <a href="#" title="Add link">Coverage</a></li>
+        <li><strong>Topics:</strong> emerging applications; social and ethical issues; role of data.</li>
+        <li><strong>Learning outcomes:</strong> assess product limits and impacts; explain data’s importance.</li>
+        <li><strong>Activities:</strong> seminar on applications; “Deep Learning in Action” e-portfolio task; reading (4 h).</li>
       </ul>
     </details>
 
-    <details class="card"><summary><strong>Unit 11:</strong> Deployment & monitoring</summary>
+    <!-- Unit 11 -->
+    <details class="card"><summary><strong>Unit 11:</strong> Intelligent Agents in Action</summary>
       <ul>
-        <li>Outcomes: rollout stages; observability; SLOs.</li>
-        <li>Work: alerts, dashboards, rollback plan.</li>
-        <li>Evidence: <a href="#" title="Add link">Runbook</a> · <a href="#" title="Add link">Alert screenshot</a></li>
+        <li><strong>Topics:</strong> Industry 4.0 and smart manufacturing; smart shop floor; agent-based modelling in FinTech.</li>
+        <li><strong>Learning outcomes:</strong> apply course concepts to sectors; gauge efficiency gains; evaluate approaches in context.</li>
+        <li><strong>Activities:</strong> lecturecast (1 h); reading (4 h); summary post; e-portfolio updates.</li>
+        <li><strong>Assessment:</strong> Individual presentation, 20 minutes, 40%.</li>
       </ul>
     </details>
 
-    <details class="card"><summary><strong>Unit 12:</strong> Capstone & reflection</summary>
+    <!-- Unit 12 -->
+    <details class="card"><summary><strong>Unit 12:</strong> The Future of Intelligent Agents</summary>
       <ul>
-        <li>Outcomes: case write-up with results and limits.</li>
-        <li>Work: STAR summary; future improvements.</li>
-        <li>Evidence: <a href="#" title="Add link">Report</a> · <a href="#" title="Add link">Slides</a></li>
+        <li><strong>Topics:</strong> future directions of deep learning and intelligent tech; societal implications.</li>
+        <li><strong>Learning outcomes:</strong> appraise current tech; assess likely evolution; consider ethical and social factors.</li>
+        <li><strong>Activities:</strong> seminar on future tech; reading (4 h).</li>
+        <li><strong>Assessment:</strong> Individual e-Portfolio submission, 2,500 words total, 40%.</li>
       </ul>
     </details>
+
   </div>
 </section>
-
 <section id="projects" class="section">
   <div class="container">
     <h2>Projects</h2>
