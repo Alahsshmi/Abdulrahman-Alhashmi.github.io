@@ -10,7 +10,7 @@
 <style>
 /* ===== Tokens ============================================================ */
 :root{
-  --bg: #ffffff; --surface:#f8fafc; --card:#ffffff; --text:#0f172a; --muted:#475569;
+  --bg:#ffffff; --surface:#f8fafc; --card:#ffffff; --text:#0f172a; --muted:#475569;
   --border:#e2e8f0; --accent:#2563eb; --accent-2:#16a34a; --ring:#93c5fd; --shadow:0 8px 24px rgba(2,6,23,.08);
 }
 @media (prefers-color-scheme: dark){
@@ -82,10 +82,7 @@ header{position:sticky;top:0;background:color-mix(in oklab, var(--bg) 85%, trans
 .card:hover{transform:translateY(-1px)}
 hr.rule{border:0;border-top:1px solid var(--border);margin:1.6rem 0}
 
-/* ===== Tables & forms =================================================== */
-.table{width:100%;border-collapse:collapse;margin:1rem 0}
-.table th,.table td{border:1px solid var(--border);padding:.6rem;text-align:left}
-.table th{background:var(--surface)}
+/* ===== Forms ============================================================ */
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 @media (max-width:720px){.form-row{grid-template-columns:1fr}}
 input,textarea{width:100%;padding:.65rem;border-radius:.5rem;border:1px solid var(--border);background:var(--card);color:var(--text)}
@@ -97,6 +94,17 @@ button.theme:hover{background:var(--surface)}
 .figure{background:var(--surface);border:1px dashed var(--border);border-radius:.8rem;padding:.6rem;display:flex;align-items:center;justify-content:center;min-height:140px}
 footer{border-top:1px solid var(--border);margin-top:2rem}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* ===== Floating actions (Back to top + Quick nav) ====================== */
+.fab{position:fixed; right:16px; bottom:16px; z-index:50; border-radius:999px; padding:.7rem .9rem; border:1px solid var(--border); background:var(--card); color:var(--text); box-shadow:var(--shadow); cursor:pointer}
+.fab[hidden]{display:none}
+#quickNavToggle{bottom:66px}
+#quickNavDock{position:fixed; right:16px; bottom:118px; z-index:49; background:var(--card); border:1px solid var(--border); border-radius:.7rem; box-shadow:var(--shadow); padding:.4rem .5rem; display:none; min-width:210px}
+#quickNavDock a{display:block; padding:.35rem .5rem; border-radius:.4rem; color:var(--text); text-decoration:none}
+#quickNavDock a:hover{background:var(--surface)}
+@media (max-width:860px){
+  #quickNavDock, #quickNavToggle{display:none}
+}
 </style>
 </head>
 <body>
@@ -109,8 +117,8 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
       <label for="nav-toggle" class="menu-btn" aria-hidden="true"><span></span></label>
       <ul class="menu">
         <li><a href="#home" class="is-active">Home</a></li>
-        <li><a href="#modules">Modules</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#modules">Modules</a></li>
         <li><a href="#ml">Machine Learning</a></li>
         <li><a href="#agents">Intelligent Agents</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -120,7 +128,7 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
   </div>
 </header>
 
-<!-- HERO (updated) -->
+<!-- HERO -->
 <section id="home" class="hero">
   <div class="container hero-grid">
     <div>
@@ -130,7 +138,7 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
       <p class="small">Last updated: 13 August 2025</p>
       <p>
         <a class="btn" href="#projects">View projects</a>
-        <a class="btn ghost" href="#modules">Module sections</a>
+        <a class="btn ghost" href="#about">About me</a>
         <a class="btn" href="cv/Abdulrahman-CV.pdf">Download CV</a>
       </p>
       <p class="small">Links:
@@ -146,6 +154,15 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
         <rect x="55" y="100" width="130" height="38" rx="16" fill="var(--surface)"/>
       </svg>
     </div>
+  </div>
+</section>
+
+<!-- About Me (above Modules) -->
+<section id="about" class="section">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>I am a postgraduate MSc Artificial Intelligence student with over 14 years of experience as an electrical engineer. My background includes designing, implementing, and managing complex electrical systems, where I developed strong problem-solving skills and the ability to deliver under pressure.</p>
+    <p>Driven by a passion for technology, I am now expanding my expertise into AI, gaining practical experience in Python, machine learning, computer vision, and AI model development. My goal is to combine my engineering knowledge with intelligent systems to create practical, scalable, and impactful solutions.</p>
   </div>
 </section>
 
@@ -171,15 +188,6 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
         <p>Agent architectures and safeguards; human-in-the-loop and deployment patterns.</p>
       </article>
     </div>
-  </div>
-</section>
-
-<!-- About Me (new) -->
-<section id="about" class="section">
-  <div class="container">
-    <h2>About Me</h2>
-    <p>I am a postgraduate MSc Artificial Intelligence student with over 14 years of experience as an electrical engineer. My background includes designing, implementing, and managing complex electrical systems, where I developed strong problem-solving skills and the ability to deliver under pressure.</p>
-    <p>Driven by a passion for technology, I am now expanding my expertise into AI, gaining practical experience in Python, machine learning, computer vision, and AI model development. My goal is to combine my engineering knowledge with intelligent systems to create practical, scalable, and impactful solutions.</p>
   </div>
 </section>
 
@@ -292,7 +300,7 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
   </div>
 </section>
 
-<!-- Intelligent Agents Units 1–12 (from your module document) -->
+<!-- Intelligent Agents Units 1–12 -->
 <section id="agents" class="section">
   <div class="container">
     <h2>Intelligent Agents</h2>
@@ -484,6 +492,19 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
   </div>
 </footer>
 
+<!-- Floating actions -->
+<button id="toTop" class="fab" type="button" aria-label="Back to top" hidden>↑</button>
+<button id="quickNavToggle" class="fab" type="button" aria-expanded="false" aria-controls="quickNavDock" aria-label="Open quick navigation">☰</button>
+<nav id="quickNavDock" aria-label="Quick navigation">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#modules">Modules</a>
+  <a href="#ml">Machine Learning</a>
+  <a href="#agents">Intelligent Agents</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
 <script>
 /* Theme toggle with persistence */
 (function(){
@@ -518,7 +539,7 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
       }
     });
   }, opts);
-  ['home','modules','about','ml','agents','projects','contact']
+  ['home','about','modules','ml','agents','projects','contact']
     .forEach(id=>{const el=document.getElementById(id); if(el) obs.observe(el);});
 })();
 
@@ -532,6 +553,46 @@ document.querySelectorAll('button[data-expand],button[data-collapse]').forEach(b
     scope.querySelectorAll('details.card').forEach(d => d.open = open);
   });
 });
+
+/* Back-to-top + Quick nav */
+(function(){
+  const toTop = document.getElementById('toTop');
+  const qToggle = document.getElementById('quickNavToggle');
+  const dock = document.getElementById('quickNavDock');
+
+  function onScroll(){
+    const show = window.scrollY > 450;
+    toTop.hidden = !show;
+    if(!show){
+      dock.style.display = 'none';
+      qToggle.setAttribute('aria-expanded','false');
+    }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  toTop.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+
+  qToggle.addEventListener('click', () => {
+    const open = dock.style.display === 'block';
+    dock.style.display = open ? 'none' : 'block';
+    qToggle.setAttribute('aria-expanded', String(!open));
+  });
+
+  dock.addEventListener('click', (e) => {
+    if(e.target.tagName === 'A'){
+      dock.style.display = 'none';
+      qToggle.setAttribute('aria-expanded','false');
+    }
+  });
+
+  document.addEventListener('click', (e) => {
+    if(!dock.contains(e.target) && e.target !== qToggle){
+      dock.style.display = 'none';
+      qToggle.setAttribute('aria-expanded','false');
+    }
+  });
+})();
 
 /* Respect reduced motion */
 if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
