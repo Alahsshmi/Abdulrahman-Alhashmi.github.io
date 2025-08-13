@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MSc AI E-Portfolio | Abdul Rahman Husain Alhashmi</title>
-<meta name="description" content="E-portfolio of Abdul Rahman Husain Alhashmi — HV Control Engineer and MSc AI student.">
+<meta name="description" content="E-portfolio of Abdul Rahman Husain Alhashmi — MSc Artificial Intelligence student with an electrical engineering background.">
 <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <style>
@@ -110,23 +110,24 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
       <ul class="menu">
         <li><a href="#home" class="is-active">Home</a></li>
         <li><a href="#modules">Modules</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#ml">Machine Learning</a></li>
         <li><a href="#agents">Intelligent Agents</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
 </header>
 
+<!-- HERO (updated) -->
 <section id="home" class="hero">
   <div class="container hero-grid">
     <div>
       <div class="kicker">MSc Artificial Intelligence E-Portfolio</div>
-      <h1>HV Control Engineer & MSc AI student</h1>
-      <p>I work on high-voltage network control and practical, data-driven solutions. This portfolio presents selected work with aims, methods, and outcomes.</p>
-      <p class="small">Last updated: 12 August 2025</p>
+      <h1>MSc Artificial Intelligence E-Portfolio</h1>
+      <p>This e-portfolio reflects both my engineering foundation and my progression into AI, showcasing academic projects, technical skills, and my vision for integrating intelligent systems into practical, high-impact applications.</p>
+      <p class="small">Last updated: 13 August 2025</p>
       <p>
         <a class="btn" href="#projects">View projects</a>
         <a class="btn ghost" href="#modules">Module sections</a>
@@ -138,9 +139,8 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
       </p>
     </div>
     <div class="figure" aria-hidden="true">
-      <!-- Profile graphic -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160" role="img" aria-label="Profile graphic">
-        <defs><linearGradient id="g" x1="0" y="0" x2="1" y2="1"><stop offset="0%" stop-color="#2563eb"/><stop offset="100%" stop-color="#16a34a"/></linearGradient></defs>
+        <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#2563eb"/><stop offset="100%" stop-color="#16a34a"/></linearGradient></defs>
         <rect width="240" height="160" rx="10" fill="var(--card)"/>
         <circle cx="120" cy="60" r="34" fill="url(#g)"/>
         <rect x="55" y="100" width="130" height="38" rx="16" fill="var(--surface)"/>
@@ -149,6 +149,7 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
   </div>
 </section>
 
+<!-- Modules overview -->
 <section id="modules" class="section">
   <div class="container">
     <h2>Modules overview</h2>
@@ -170,6 +171,15 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
         <p>Agent architectures and safeguards; human-in-the-loop and deployment patterns.</p>
       </article>
     </div>
+  </div>
+</section>
+
+<!-- About Me (new) -->
+<section id="about" class="section">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>I am a postgraduate MSc Artificial Intelligence student with over 14 years of experience as an electrical engineer. My background includes designing, implementing, and managing complex electrical systems, where I developed strong problem-solving skills and the ability to deliver under pressure.</p>
+    <p>Driven by a passion for technology, I am now expanding my expertise into AI, gaining practical experience in Python, machine learning, computer vision, and AI model development. My goal is to combine my engineering knowledge with intelligent systems to create practical, scalable, and impactful solutions.</p>
   </div>
 </section>
 
@@ -293,7 +303,6 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
       <button class="theme" type="button" data-scope="#agents" data-collapse>Collapse all</button>
     </div>
 
-    <!-- Unit 1 -->
     <details class="card"><summary><strong>Unit 1:</strong> Introduction to Agent-Based Computing</summary>
       <ul>
         <li><strong>Topics:</strong> trends driving agent-based computing; autonomy; agent–environment interaction; real-world examples.</li>
@@ -302,7 +311,6 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
       </ul>
     </details>
 
-    <!-- Unit 2 -->
     <details class="card"><summary><strong>Unit 2:</strong> Introducing First-Order Logic</summary>
       <ul>
         <li><strong>Topics:</strong> symbols and syntax; mapping between natural language and logic; quantifiers.</li>
@@ -311,7 +319,6 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
       </ul>
     </details>
 
-    <!-- Unit 3 -->
     <details class="card"><summary><strong>Unit 3:</strong> Agent Architectures</summary>
       <ul>
         <li><strong>Topics:</strong> history and development; symbolic reasoning agents; agents with state; reactive approaches.</li>
@@ -320,7 +327,6 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
       </ul>
     </details>
 
-    <!-- Unit 4 -->
     <details class="card"><summary><strong>Unit 4:</strong> Hybrid Agent Architectures</summary>
       <ul>
         <li><strong>Topics:</strong> combining reactive and deliberative behaviours; case study of a deployed hybrid system.</li>
@@ -329,7 +335,6 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
       </ul>
     </details>
 
-    <!-- Unit 5 -->
     <details class="card"><summary><strong>Unit 5:</strong> Agent Communication</summary>
       <ul>
         <li><strong>Topics:</strong> speech acts; KQML; role of ontologies in communication.</li>
@@ -338,7 +343,6 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
       </ul>
     </details>
 
-    <!-- Unit 6 -->
     <details class="card"><summary><strong>Unit 6:</strong> Working Together</summary>
       <ul>
         <li><strong>Topics:</strong> designing dialogues with KQML/KIF; strengths and limits of agent communication.</li>
@@ -348,7 +352,6 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
       </ul>
     </details>
 
-    <!-- Unit 7 -->
     <details class="card"><summary><strong>Unit 7:</strong> Natural Language Processing (NLP)</summary>
       <ul>
         <li><strong>Topics:</strong> why NLP is challenging; common techniques; Word2Vec focus.</li>
@@ -357,7 +360,6 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
       </ul>
     </details>
 
-    <!-- Unit 8 -->
     <details class="card"><summary><strong>Unit 8:</strong> Understanding NLP</summary>
       <ul>
         <li><strong>Topics:</strong> Word2Vec hands-on demo; constituency parse trees.</li>
@@ -366,7 +368,6 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
       </ul>
     </details>
 
-    <!-- Unit 9 -->
     <details class="card"><summary><strong>Unit 9:</strong> Introduction to Adaptive Algorithms</summary>
       <ul>
         <li><strong>Topics:</strong> artificial neural networks; deep learning; opportunities and limitations.</li>
@@ -375,7 +376,6 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
       </ul>
     </details>
 
-    <!-- Unit 10 -->
     <details class="card"><summary><strong>Unit 10:</strong> Deep Learning in Action</summary>
       <ul>
         <li><strong>Topics:</strong> emerging applications; social and ethical issues; role of data.</li>
@@ -384,7 +384,6 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
       </ul>
     </details>
 
-    <!-- Unit 11 -->
     <details class="card"><summary><strong>Unit 11:</strong> Intelligent Agents in Action</summary>
       <ul>
         <li><strong>Topics:</strong> Industry 4.0 and smart manufacturing; smart shop floor; agent-based modelling in FinTech.</li>
@@ -394,7 +393,6 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
       </ul>
     </details>
 
-    <!-- Unit 12 -->
     <details class="card"><summary><strong>Unit 12:</strong> The Future of Intelligent Agents</summary>
       <ul>
         <li><strong>Topics:</strong> future directions of deep learning and intelligent tech; societal implications.</li>
@@ -406,6 +404,8 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
 
   </div>
 </section>
+
+<!-- Projects -->
 <section id="projects" class="section">
   <div class="container">
     <h2>Projects</h2>
@@ -447,28 +447,7 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
   </div>
 </section>
 
-<section id="skills" class="section">
-  <div class="container">
-    <h2>Skills matrix</h2>
-    <table class="table" aria-describedby="skills-desc">
-      <caption id="skills-desc" class="sr-only">Self-rated skills mapped to evidence</caption>
-      <thead><tr><th>Skill</th><th>Level</th><th>Evidence</th></tr></thead>
-      <tbody>
-        <tr><td>Electrical system troubleshooting</td><td>Advanced</td><td>ADDC operations</td></tr>
-        <tr><td>High-voltage equipment handling</td><td>Advanced</td><td>ADDC control room</td></tr>
-        <tr><td>Control room monitoring</td><td>Advanced</td><td>ADDC & CMS Al Taweelah</td></tr>
-        <tr><td>Preventive maintenance planning</td><td>Advanced</td><td>Plant procedures</td></tr>
-        <tr><td>Safety procedures and compliance</td><td>Advanced</td><td>HV permits & SOPs</td></tr>
-        <tr><td>Team leadership and coordination</td><td>Intermediate</td><td>Shift & outage work</td></tr>
-        <tr><td>Technical report writing</td><td>Intermediate</td><td>Incident & shift reports</td></tr>
-        <tr><td>Python (Pandas, NumPy)</td><td>Intermediate</td><td><a href="#airbnb">Airbnb models</a></td></tr>
-        <tr><td>scikit-learn</td><td>Intermediate</td><td><a href="#airbnb">Airbnb models</a></td></tr>
-        <tr><td>Data visualisation</td><td>Intermediate</td><td><a href="#airbnb">Plots and metrics</a></td></tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
+<!-- Contact -->
 <section id="contact" class="section">
   <div class="container">
     <h2>Contact</h2>
@@ -539,7 +518,7 @@ footer{border-top:1px solid var(--border);margin-top:2rem}
       }
     });
   }, opts);
-  ['home','modules','ml','agents','projects','skills','contact']
+  ['home','modules','about','ml','agents','projects','contact']
     .forEach(id=>{const el=document.getElementById(id); if(el) obs.observe(el);});
 })();
 
